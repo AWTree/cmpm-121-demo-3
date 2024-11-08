@@ -1,13 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
-  <body>
-    <div id="app">
-      <!-- todo -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geocoin Carrier</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <div id="app">
+    <h1>Geocoin Carrier</h1>
+    
+    <!-- Control Panel -->
+    <div id="controlPanel">
+        <button id="sensor" title="Sensor">🌐</button>
+        <button id="north" title="North">⬆️</button>
+        <button id="south" title="South">⬇️</button>
+        <button id="west" title="West">⬅️</button>
+        <button id="east" title="East">➡️</button>
+        <button id="reset" title="Reset">🚮</button>
     </div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+
+    <!-- Map and Status Panels -->
+    <div id="map-container">
+        <div id="map"></div>
+    </div>
+    
+    <div id="statusPanel"></div>
+
+    <!-- Inventory Section -->
+    <div id="inventory">
+        <h3>Inventory:</h3>
+        <ul id="inventoryList"></ul>
+    </div>
+  </div>
+    <script type="module" src="./src/main.ts"></script>
+</body>
 </html>
