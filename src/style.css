@@ -107,13 +107,14 @@ h1 {
 }
 
 #copyBtn {
+  display: inline-flex;
   align-self: self-end;
   margin-left: 20px;
-  color: #d6d6d6;
-  background-color: #a0a0a0;
+  color: #ebebeb;
+  background-color: #bdbdbd;
   padding: 3px 5px;
   border: none;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 #copyBtn:hover {
@@ -137,7 +138,7 @@ h1 {
   text-align: left;
 }
 
-.cache-popup button {
+button {
   display: block;
   background-color: #4088e7;
   color: #ffffff;
