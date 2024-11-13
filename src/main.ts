@@ -23,7 +23,7 @@ leaflet.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 1
 
 // Player Marker and Movement Polyline
 const playerMarker = leaflet.marker(playerPosition).addTo(map);
-const movementPolyline = leaflet.polyline(movementHistory).addTo(map);
+const movementPolyline = leaflet.polyline(movementHistory, { color: '#4C9BE4' }).addTo(map);
 
 // Status Panel and Inventory Elements
 const statusPanel = document.getElementById("statusPanel")!;
